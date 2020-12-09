@@ -1,0 +1,57 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Layout.master.cs" Inherits="Trabajo_Web.App.Layout" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+    <link href="css/estilos.css" rel="stylesheet" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <!--enlaces de estilos!-->
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <!--menu!-->
+            
+     
+      <header class="estiloHeader">
+      <nav class="menuNav">
+      <ul class="menuUl">
+                <li class="menuLi"> <a class="menuLink" href="./Default.aspx"> Home </a></li>
+                <li class="menuLi"> <a class="menuLink" href="./Datos.aspx"> Datos </a></li>
+                 <li class="menuLi"> <a class ="menuLink" href ="formulario.aspx"> Formulario </a></li>
+                <li class="menuLi"> <a class="menuLink" href="./Nosotros.aspx"> Nosotros </a></li>
+            </ul>
+        </nav>
+
+    </header>
+              <!--menu!-->
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            <!--footer!-->
+            <footer class="estiloFooter">
+
+        <h3 class="textoFooter"> by: Adrian Murcia </h3>
+
+        
+        <div class="contenedorGib">
+            <div> 
+                <a href="https://youtu.be/CNfBtfhdOaw"> <img class="ico" src="pic/github.png" alt=""></a>
+           </div>
+    
+           <div> 
+            <small> Murload </small>
+           </div>
+
+        </div>
+    </footer>
+             <!--footer!-->
+        </div>
+    </form>
+</body>
+</html>
